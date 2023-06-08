@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+    <title>JoJol.com | De JoJo Winkel voor jou!</title>
+    <link rel="shortcut icon" href="img/logo_new.png">
+</head>
+<body>
+    <section id="js--checkOutWindow" class="checkOut a-popup">
+        <ul class="checkOut__list">
+            <li class="checkOut__listItem">
+                <img src="img/sf.webp" alt="Figuurtje van de stand Sticky Fingers" class="checkOut__image">
+                <p class="checkOut__title">Sticky Fingers</p>
+                <p id="js--amount-sf" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="img/the_world.webp" alt="Figuurtje van de stand The World" class="checkOut__image">
+                <p class="checkOut__title">The World</p>
+                <p id="js--amount-tw" class="checkOut__amount"></p>
+            </li>
+            <li class="checkOut__listItem">
+                <img src="img/kq.webp" alt="Figuurtje van de stand Killer Queen" class="checkOut__image">
+                <p class="checkOut__title">Killer Queen</p>
+                <p id="js--amount-kq" class="checkOut__amount"></p>
+            </li>
+        </ul>
+    </section>
+    <article class="modal a-popup" id="js--shoppingModal">
+        ✓ Added to Cart
+    </article>
+    <button id="js--checkOutButton" class="shoppingCart">
+        🛒
+    <div class="shoppingCart__message">0</div>
+    </button>
+    <main>
+        <ul class="games">
+            <li class="games__game a-popup">
+                <figure class="game__figure"><img src="img/sf.webp" alt="Foto van de stand Sticky Fingers" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€20</h2>
+                    <h3 class="games__h3">Sticky Fingers</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="sf" class="games__button">Add to Cart</button>
+                </section>
+                
+            </li>
+            <li class="games__game a-popup">
+                <figure class="game__figure">
+                    <img src="img/the_world.webp" alt="Foto van de stand The World" class="game__img"></figure>
+                 <section class="games__body">
+                    <h2 class="games__h2">€25</h2>
+                    <h3 class="games__h3">The World</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="tw" class="games__button">Add to Cart</button>
+                 </section>
+            </li>
+            <li class="games__game games__game--third a-popup">
+                <figure class="game__figure">
+                    <img src="img/kq.webp" alt="Foto van de stand Killer queen" class="game__img"></figure>
+                <section class="games__body"> 
+                    <h2 class="games__h2">€30</h2>
+                    <h3 class="games__h3">Killer Queen</h3>
+                    <div class="game__stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+                    <button data-product="kq" class="games__button">Add to Cart</button>
+                </section>
+            </li>
+        </ul>
+    </main>
+</body>
+</html> 
